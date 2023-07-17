@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "wheres waldo",
+  "version": "1.0",
+  "description": "find waldo",
+  "icons": {
+    "128": "images/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "<all_urls>"
+      ],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}
